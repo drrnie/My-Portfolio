@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url(../FONTS/montserrat/MontserratAlternates-SemiBold.otf);
+}
+@font-face{
+    font-family: "PT serif";
+    src: url(../FONTS/PTF75F.ttf);
+}
+@font-face{
+    font-family: "Lora";
+    src: url(../FONTS/Lora-Regular.ttf);
+}
+
+a{
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.whole-body{
+    background: linear-gradient(to left bottom, rgba(11, 133, 7, 0.548), rgba(0, 114, 245, 0.356)), url(../IMG/bakcground-body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3{
+    font-family: century gothic;
+    color:antiquewhite;
+    font-size: 24px;
+    text-align: center;
+    padding: 30px;
+}
+.spacing1{
+    padding: 30px;
+}
+
+.heading{
+    padding-top: 10%;
+    padding-bottom: 30%; 
+    text-align: center;
+    font-family: cursive;
+    font-size: 36px;
+    color: antiquewhite;
+    line-height: 70px;
+    background: linear-gradient(to right bottom, rgba(204, 255, 153, 0.397),rgba(0, 0, 0, 0.548)), url(../IMG/firewatch\ green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+
+.introduction{
+    color: antiquewhite;
+    font-size: 24px;
+    padding: 30px; 
+    text-align: center;
+    line-height: 50px;
+}
+
+.introduction p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+.my-skills{
+    color: antiquewhite;
+    padding: 30px;
+    font-size: 24px; 
+    text-align: center;
+    line-height: 50px;
+}
+.my-skills p{
+    padding-bottom: 20px;
+}
+
+.my-skills p span{
+    display: block;
+}
+
+.contact-me{
+    color: antiquewhite ;
+    font-size: 24px;
+    padding: 25x; 
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+}
+
+.contact-me p{
+    padding: 15px;
+}
+
+.contact-me p span{
+    display: block;
+}
+
+.contactme-headings{
+    font-family: century gothic;
+}
+
+.footer{
+    padding-bottom: 10px;
+    padding-top: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: #c8e690;
+  text-align: center;
+  font-family: century gothic;
+  font-weight: bold;
+  color: #2d6349;
+  line-height: 30px;
+}
+
+.inbetween{
+    padding: 10px;
+}
+.footer img{
+    height: 30px;
+    width: 30px;
+}
+.footer p span{
+    display: block;
+    line-height: 25px;
+}
+.btn{
+    padding-bottom: 60px;
+}
+
+#intro-heading{
+    font-family: "Montserrat";
+}
+
+#sub-heading {
+    font-family: "Lora";
+    font-style: normal;
+    font-size: 48px;
+}
+#nice-to-meet-you{
+    font-family: century gothic;
+}
+#profile-picture{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+#drawing-pad{
+    height: 150px;
+    width: 150px;
+}
+#heading-myskills{
+    font-family: century gothic;
+}
+#gamepad{
+    position: absolute;
+    left: 10%;
+    height: 100px;
+    width: 160px;
+}
+
+#solitude{
+    position: absolute;
+    left: 80%;
+    top: 325%;
+    overflow: hidden;
+}
+
+#coffee{
+    height: 100px;
+    width: 100px;
+}
+
+
+/*all button designs and functions are from youtube, and has the sole purpose of aesthetics*/
+button{
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #6200ff;
+    width: 150px;
+    height: 50px;
+    border: 1px solid antiquewhite;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline: none;
+
+}
+
+button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 255.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+
+button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background:linear-gradient(to right bottom, rgb(45, 171, 255), rgb(131, 94, 235));
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: linear-gradient(to left top, rgb(62, 184, 255), rgba(187, 19, 254, 0.596));
+    color: white;
+    cursor: pointer;
+}
+
+button:hover::before{
+    transform: translate(150px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover::after{
+    transform: translate(150px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+/*all button designs and functions are from youtube, and has the sole purpose of aesthetics*/ 
